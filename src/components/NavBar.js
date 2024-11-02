@@ -2,10 +2,9 @@ import React from "react";
 
 function NavBar() {
   const links = ["home", "about", "projects"];
-  const newhref = ["#home", "#about", "#projects"];
-  const newArray = links.map((newlink, index) => {
+  const newArray = links.map((newlink) => {
     return (
-      <a key={newlink} href={newhref[index]}>
+      <a key={newlink} href={`#${newlink}`}>
         {newlink}
       </a>
     );
